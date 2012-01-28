@@ -1,4 +1,16 @@
-/* This is a
+/* This is a simple example for using the IRMP library
+ * original home of IRMP is:  http://www.mikrocontroller.net/articles/IRMP
+ * arduino port of IRMP home: https://gitorious.org/arduino-addons/irmp-arduino
+ *
+ * (C) 2012 Stefan Seyfried
+ *
+ * This program is free software. It comes without any warranty, to
+ * the extent permitted by applicable law. You can redistribute it
+ * and/or modify it under the terms of the Do What The Fuck You Want
+ * To Public License, Version 2, as published by Sam Hocevar. See
+ * http://sam.zoy.org/wtfpl/COPYING for more details. 
+ */
+
 /* use TimerOne http://arduino.cc/playground/Code/Timer1 for interrupts */
 #include <TimerOne.h>
 /* first include Arduino.h, the IDE includes it after irmp*.h ... */
