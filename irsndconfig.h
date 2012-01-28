@@ -1,3 +1,4 @@
+#ifndef ARDUINO
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
  * irsndconfig.h
  *
@@ -119,4 +120,5 @@
 #warning F_INTERRUPTS too low, LEGO protocol disabled (should be at least 20000)
 #undef IRSND_SUPPORT_LEGO_PROTOCOL
 #define IRSND_SUPPORT_LEGO_PROTOCOL             0       // DO NOT CHANGE! F_INTERRUPTS too low!
+#endif
 #endif

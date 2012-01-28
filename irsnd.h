@@ -1,3 +1,4 @@
+#ifndef ARDUINO
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
  * irsnd.h
  *
@@ -60,3 +61,4 @@ extern void                         irsnd_set_callback_ptr (void (*cb)(uint8_t))
 #endif // IRSND_USE_CALLBACK == 1
 
 #endif /* _WC_IRSND_H_ */
+#endif

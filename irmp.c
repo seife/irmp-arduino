@@ -1544,6 +1544,7 @@ static uint8_t                              IRMP_PIN;
 void
 irmp_init (void)
 {
+#ifndef ARDUINO
 #if !defined(PIC_CCS_COMPILER) && !defined(PIC_C18)                     // only AVR
     IRMP_PORT &= ~(1<<IRMP_BIT);                                        // deactivate pullup
     IRMP_DDR &= ~(1<<IRMP_BIT);                                         // set pin to input
@@ -1552,6 +1553,7 @@ irmp_init (void)
 #if IRMP_LOGGING == 1
     irmp_uart_init ();
 #endif
+#endif //ARDUINO
 }
 #endif
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
